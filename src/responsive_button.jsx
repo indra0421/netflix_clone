@@ -11,6 +11,8 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import SettingsIcon from '@mui/icons-material/Settings';
 import index from './index.css'
+import Home from './Navbar/Home.jsx'
+import { Route, Routes } from 'react-router-dom'
 
 export default function TemporaryDrawer() {
     const [state, setState] = React.useState({
@@ -45,8 +47,17 @@ export default function TemporaryDrawer() {
             </List>
             <Divider />
             <List>
-                {['Home', 'Tv Shows', 'Movies','Recently Added','My List'].map((text, index) => (
-                    <ListItem button key={text}>
+                {['Home', 'Tv Shows', 'Movies', 'Recently Added', 'My List'].map((text, index) => (
+                    <ListItem button key={text} onClick={() => {
+                        return (
+                            <>
+
+                                <Routes>
+                                    <Route path='/home' element={<Home />} />
+                                </Routes>
+                            </>
+                        )
+                    }}>
                         <ListItemIcon>
                             {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                         </ListItemIcon>
@@ -61,7 +72,7 @@ export default function TemporaryDrawer() {
         <div>
             {['right'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button style={{color:"white"}} onClick={toggleDrawer(anchor, true)}><SettingsIcon /></Button>
+                    <Button style={{ color: "white" }} onClick={toggleDrawer(anchor, true)}><SettingsIcon /></Button>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}
