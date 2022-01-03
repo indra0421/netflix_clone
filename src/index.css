@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color:black;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+.netflix_logo img{
+  height: 50px;
+  margin: -2px;
+}
+
+.nav_bar{
+  display: flex;
+  justify-content: space-between;
+  
+  height: 55px;
+background-color: black;
+  
+}
+.nav_menu{
+
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.nav_menu div p{
+  padding: 10px 10px;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: white;
+  text-decoration: none;
+}
+.nav_bar_inside{
+  display: flex;
+  flex-wrap: wrap;
+}
+.search_nav{
+  background-color: white;
+    margin-top: 13.5px;
+    height: 26.1px;
+    border-right: none;
+    color: black;
+    border-color: white;
+    cursor: pointer;
+    outline: none;
+}
+.delete_nav{
+  background-color: white;
+    height: 24.5px;
+    margin-top: 14.5px;
+    border-left: none;
+    border-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+input.nav_inp{
+  height: 25px;
+  margin-top: 14px;
+  border: none;
+  border-color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  text-decoration: none;
+  outline: none;
+  }
+.nav_profile{
+  padding-top: 4px;
+  border: none;
+  background-color: white;
+  
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-right: 13px;
+}
+
+.end_nav{
+  display: flex;
+  
+}
+.nav_not{
+  border: none;
+    background-color: black;
+    padding: 15px 14px;
+    color: white;
+cursor: pointer;
+}
+
+.active{
+  color: rgb(175, 166, 166);
+}
+
+
+.home_heading{
+ color: white;
+ font-family: 'Baloo Bhai 2', cursive;
+ padding-left: 14px;
+}
+
+.home_recent{
+ display: flex;
+ 
+}
+
+.cards_div{
+  display: flex;
+  padding: 0 2px;
+  border-radius: 10px;
+  
+  }
+  .card_render{
+  display: flex;
+  display: inline-block;
+  
+  }
+  
+  .card_img{
+      height: 125px;
+      width: 228px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  
+  .card_img:hover{
+      zoom: 1.009;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 3px 3px rgba(0,0,0,0.1);
+  }
+
+.active1{
+  color: blue;
+}
+
+.heading_all{
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading_all p{
+color: white;
+padding-right: 5px;
+cursor: pointer;
+padding-top: 5px;
+
+}
+.heading_all p:hover{
+  color: rgb(173, 169, 162);
+}
+
+/* -------------------------------- */
+.cards_movie{
+  margin-top: 35px;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  margin-left: 8px;
+  justify-content: space-between;
+}
+
+.card_img_movie{
+  height: 146px;
+    width: 191px;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 9px;
+  
+}
+
+.card_info_movie{
+  text-align: center;
+}
+
+.card_info_movie h3{
+  font-weight: bold;
+  margin-top: 5px;
+}
+.card_info_movie button{
+  border-radius: 7px;
+ margin-top: 0px;
+ cursor: pointer;
+
+}
+.cards_movie:hover{
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 10px 10px rgba(0,0,0,0.1);
+}
+
+.card_info_movie button:hover{
+  background-color: rgb(211, 208, 204);
+}
+
+.body_movie{
+ align-items: center;
+}
+
+.nav_settings_s{
+  display: none;
+  
+}
+
+
+
+
+
+
+
+@media(max-width:850px)
+  {
+    .nav_menu{
+      display: none;
+    }
+  }
+@media(max-width:422px){
+  .nav_not{
+    display: none;
+  }
+}
+@media(max-width:422px){
+  .nav_profile{
+    display: none;
+  }
+}
+@media(max-width:422px){
+  .nav_inp{
+    width: 120px;
+  }
+ 
+}
+@media(max-width:850px){
+  .nav_settings_s{
+    display: block;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    padding: 10px 0px;
+
+  }
+}
+@media(max-width:850px){
+  .nav_bar{
+    display: flex;
+    justify-content: space-between;
+  }
+}
