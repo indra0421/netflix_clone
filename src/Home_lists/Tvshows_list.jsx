@@ -7,7 +7,7 @@ const Tvshows_list = () => {
         <>
             <div className='heading_all'>
                 <h3 className="home_heading">Tvshows</h3>
-                <p ><u>See ll </u></p>
+                
             </div>
 
             <div className="home_recent">

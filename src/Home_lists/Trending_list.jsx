@@ -7,7 +7,7 @@ const Trending_list = () => {
         <>
             <div className='heading_all'>
                 <h3 className="home_heading">Trending</h3>
-                <p ><u>see all </u></p>
+              
             </div>
 
             <div className="home_recent">

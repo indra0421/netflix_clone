@@ -11,7 +11,7 @@ const Recent_list = () => {
             
                 <div className='heading_all'>
                     <h3 className="home_heading">Recents</h3>
-                    <p ><u>see all </u></p>
+                    
                 </div>
 
                 <div className="home_recent">
@@ -20,7 +20,7 @@ const Recent_list = () => {
 
                         return (
                             <>
-
+                            {/* <ScrollView horizontal={true}>  */}
                                 <Card
                                     key={val.id}
                                     imgsrc={val.imgsrc}
@@ -28,7 +28,7 @@ const Recent_list = () => {
                                     link={val.link}
 
                                 />
-
+                              {/* </ScrollView> */}
                             </>
                         )
                     })}

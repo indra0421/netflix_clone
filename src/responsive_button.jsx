@@ -12,6 +12,8 @@ import MailIcon from '@mui/icons-material/Mail';
 import SettingsIcon from '@mui/icons-material/Settings';
 import index from './index.css'
 import Home from './Navbar/Home.jsx'
+import { NavLink } from "react-router-dom";
+import Menu from './Menu.jsx';
 import { Route, Routes } from 'react-router-dom'
 
 export default function TemporaryDrawer() {
@@ -46,25 +48,7 @@ export default function TemporaryDrawer() {
                 ))}
             </List>
             <Divider />
-            <List>
-                {['Home', 'Tv Shows', 'Movies', 'Recently Added', 'My List'].map((text, index) => (
-                    <ListItem button key={text} onClick={() => {
-                        return (
-                            <>
-
-                                <Routes>
-                                    <Route path='/home' element={<Home />} />
-                                </Routes>
-                            </>
-                        )
-                    }}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
+            <Menu/>
         </Box>
     );
 
