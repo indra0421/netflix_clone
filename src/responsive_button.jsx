@@ -15,6 +15,13 @@ import Home from './Navbar/Home.jsx'
 import { NavLink } from "react-router-dom";
 import Menu from './Menu.jsx';
 import { Route, Routes } from 'react-router-dom'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import HomeIcon from '@mui/icons-material/Home';
+import MovieIcon from '@mui/icons-material/Movie';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
+import AddTaskIcon from '@mui/icons-material/AddTask';
+import ListIcon from '@mui/icons-material/List';
 
 export default function TemporaryDrawer() {
     const [state, setState] = React.useState({
@@ -41,14 +48,41 @@ export default function TemporaryDrawer() {
                 {['Profile', 'Notifications'].map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                            {index % 2 === 0 ? <AccountCircleIcon /> : <NotificationsActiveIcon />}
                         </ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
             </List>
             <Divider />
-            <Menu/>
+            <List>
+                {['Home', 'Tvshows', 'Movies', 'Recently Added', 'MyList'].map((text, index) => (
+                    <ListItem button key={text}>
+                        <ListItemIcon>
+
+                            {text === 'Home' ? <HomeIcon /> : text === 'Tvshows' ? <LiveTvIcon /> : text === 'Movies' ? <MovieIcon /> : text === 'Recently Added' ? <AddTaskIcon /> : <ListIcon />}
+
+                        </ListItemIcon>
+
+
+                        {text === 'Home' ? <NavLink exact activeClassName="active1" to="/netflix_clone" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Tvshows' ? <NavLink exact activeClassName="active1" to="/tvshows" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Movies' ? <NavLink exact activeClassName="active1" to="/movies" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Recently Added' ? <NavLink exact activeClassName="active1" to="/radded" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : <NavLink exact activeClassName="active1" to="/mylist" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink>}
+
+
+
+
+
+
+
+
+
+
+
+
+                    </ListItem>
+                ))}
+            </List>
+
+
         </Box>
     );
 

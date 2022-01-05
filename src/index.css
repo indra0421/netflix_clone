@@ -220,8 +220,13 @@ padding-top: 5px;
   
 }
 
-
-
+.settings_list{
+  display: flex;
+  flex-direction: column;
+}
+.all_list{
+  display: flex;
+}
 
 
 
