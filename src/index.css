@@ -19,9 +19,10 @@ body{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
-  height: 55px;
-background-color: black;
+    height: 55px;
+  background-color: black;
+  position: sticky;
+  top: 0;
   
 }
 .nav_menu{
