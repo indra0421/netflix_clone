@@ -225,10 +225,14 @@ padding-top: 5px;
   display: flex;
   flex-direction: column;
 }
+
 .all_list{
   display: flex;
 }
 
+.home_recent::-webkit-scrollbar{
+  display: none;
+}
 
 
 
