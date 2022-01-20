@@ -65,7 +65,7 @@ export default function TemporaryDrawer() {
                         </ListItemIcon>
 
 
-                        {text === 'Home' ? <NavLink exact activeClassName="active1" to="/netflix_clone" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Tvshows' ? <NavLink exact activeClassName="active1" to="/tvshows" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Movies' ? <NavLink exact activeClassName="active1" to="/movies" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Recently Added' ? <NavLink exact activeClassName="active1" to="/radded" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : <NavLink exact activeClassName="active1" to="/mylist" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink>}
+                        {text === 'Home' ? <NavLink exact activeClassName="active1" to="/netflix_clone" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Tvshows' ? <NavLink exact activeClassName="active1" to="/tvshows" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Movies' ? <NavLink exact activeClassName="active1" to="/netflix_clone/movies" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : text === 'Recently Added' ? <NavLink exact activeClassName="active1" to="/radded" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink> : <NavLink exact activeClassName="active1" to="/mylist" style={{ textDecoration: 'none' }}><ListItemText primary={text} /></NavLink>}
 
                     </ListItem>
                 ))}
