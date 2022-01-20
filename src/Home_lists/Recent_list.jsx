@@ -13,14 +13,15 @@ const Recent_list = () => {
                     <h3 className="home_heading">Recents</h3>
                     
                 </div>
-
+                
                 <div className="home_recent">
-
+                
                     {Recent_api.map((val) => {
 
                         return (
                             <>
-                            {/* <ScrollView horizontal={true}>  */}
+                            
+                           
                                 <Card
                                     key={val.id}
                                     imgsrc={val.imgsrc}
@@ -28,7 +29,8 @@ const Recent_list = () => {
                                     link={val.link}
 
                                 />
-                              {/* </ScrollView> */}
+                             
+                             
                             </>
                         )
                     })}

@@ -14,6 +14,7 @@ const Home = () => {
 
 
             <Recent_list />
+
             <Trending_list />
             <Tvshows_list />
             <Series_list />

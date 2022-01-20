@@ -20,7 +20,7 @@ function App() {
         
         <Route exact path='/netflix_clone' element={<Home />} />
         <Route path='/tvshows' element={<Tvshows />} />
-        <Route path='/movies' element={<Movies />} />
+        <Route path='/netflix_clone/movies' element={<Movies />} />
         <Route path='/radded' element={<Recent />} />
         <Route path='/mylist' element={<Mylist />} />
 
